@@ -2,20 +2,30 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Каталог</title>
-  </head>
+    <title>Магазин музыкальных инструментов</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>  
+
   <body>
-    <header>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <hr />
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <h1>Каталог</h1>
-      <ul>
+
+    <hr />
+
+    <main class="container">
+      <h1 class="main-header">Каталог</h1>
+      <ul class="item-list">
         <li>
           <a href="items/Yamaha_F370.html"
             ><img src="img/Yamaha_F370.jpg" width="100" alt="Yamaha_F370" />
@@ -43,10 +53,12 @@
           >
         </li>
       </ul>
-      <hr />
     </main>
-    <footer>
-      <p>&copy;<span>«Все права защищены!!!»</span></p>
+
+    <hr />
+
+    <footer class="main-footer">
+      <p>&copy;<span>«Все права защищены»</span></p>
     </footer>
   </body>
 </html>
