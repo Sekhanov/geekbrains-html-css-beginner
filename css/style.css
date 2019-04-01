@@ -3,6 +3,10 @@ body {
     background-color: #f8f8f8;
 }
 
+.shop-logo {
+    width: 100px;
+}
+
 .site-navigation-list {
     list-style: none;
 }
@@ -14,12 +18,14 @@ body {
     font-weight: 500;
 }
 
+.site-navigation-list a:hover {
+    color: #405eb7;
+}
+
 .contact textarea,
 .contact input {
     width: 300px;
     font-size: 15px;
-    color: #073e84;
-    
 }
 
 .contact input {   
@@ -27,8 +33,25 @@ body {
 
 }
 
+.contact textarea:focus,
+.contact input:focus {
+    background-color: #d1e5f3;
+    color: #9e3207; 
+}
+
+.contact textarea::first-line,
+.contact input::first-line {
+   text-transform: capitalize; 
+}
+
+
+
 .item-image {
     border: 3px solid black;
+}
+
+.item-image:hover {
+    border-color: white;
 }
 
 .short-description-header,
@@ -45,6 +68,25 @@ body {
     font-size: 14px;
     font-style: italic; 
     line-height: 16px;
+}
+
+.item-characteristics-table tr:nth-last-child(even) {
+    background-color: #d4d4d4; 
+}
+
+.item-characteristics-table, 
+.item-characteristics-table th,
+.item-characteristics-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+
+.item-characteristics-table th {
+    height: 20px;
+    background-color: #4c7190;
+    color: white;
 }
 
 .item-characteristics-list {
