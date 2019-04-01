@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Магазин музыкальных инструментов</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:400,700"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr>
+
+    <main class="container">
+      <h1 class="main-header">Контакты</h1>
+
+      <section class="contact">
+        <h2 class="contact-form-header">Напишите нам:</h2>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Имя</label><br>
+          <input type="text" id="name" placeholder="Введите ваше имя" /><br>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" placeholder="name@mail.com" /><br>
+          <label for="phone">Телефон</label><br>
+          <input type="number" id="phone" placeholder="8-888-888-88-88" /><br>
+          <label for="header">Тема</label><br>
+          <input
+            type="text"
+            id="header"
+            placeholder="О чем хотите написать"
+          /><br>
+          <label for="content">Текст сообщения</label><br>
+          <textarea
+            name="content"
+            id="content"
+            cols="30"
+            rows="10"
+            placeholder="содержание"
+          ></textarea
+          ><br>
+          <button type="submit">отправить</button>
+        </form>
+      </section>
+
+      <section class="coordinate">
+        <h2 class="coordinates-header">Наши координаты:</h2>
+        <ul class="coordinate-list">
+          <li>Контактный номер телефона: 8-888-888-88-88</li>
+          <li>Адрес: Lorem ipsum, dolor sit amet consectetur adipisicing</li>
+          <li>Email: mail@mail.com</li>
+        </ul>
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afd7fc399d8895026e8ab804c3026143318a1be3be20d08acbffe34f22727cce1&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+        ></script>
+      </section>
+      
+    </main>
+
+    <hr>
+
+    <footer class="main-footer">
+      <p>&copy;<span>«Все права защищены»</span></p>
+    </footer>
+
+  </body>
+
+</html>
