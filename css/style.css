@@ -6,13 +6,26 @@ body {
 
 
 .page-container {
-    width: 60%;
+    width: 1100px;
     margin: auto;
 }
 
 .main-header {
+    position: relative;
     display: flex;
     justify-content: space-between;
+
+}
+
+.main-header::before {
+    position: absolute;
+    content: "";
+    width: 1100px;
+    height: 140px;
+    background-image: url(/img/fon.jpg);
+    background-size: 1100px, 140px; 
+    opacity: 0.1;
+    z-index: -1;
 }
 
 .shop-logo {
@@ -63,17 +76,44 @@ body {
    text-transform: capitalize; 
 }
 
-.main-container-header {
-    margin: 40px auto 0;
-    width: 200px;
+
+
+.buy-item-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
-.item-image {
-    border: 3px solid black;
+.item-image {    
+    border: 3px solid #9a999996;
+    padding: 10px;
 }
 
 .item-image:hover {
     border-color: white;
+}
+
+.short-description {
+    width: 600px;
+
+}
+
+.short-description button {
+    display: block;
+    margin: 100px 0 auto auto;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #d1e5f3;
+    border: none; 
+}
+
+.short-description button:hover {
+    border: 1px solid #8888889e;
+    cursor: pointer;
+}
+
+.short-description button:active {
+    background-color: #adf5d7;
 }
 
 .short-description-header,
